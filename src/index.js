@@ -24,6 +24,12 @@ app.get('/api/hello',(req,res)=>{
 })
 
 const PORT=proces.env.PORT || 5000;
+
+// routes
+const authRoutes=require('./routes/authRoutes.js');
+
+app.use('/api/auth',authRoutes);
+
 server.listen(PORT,()=>{
     console.log(`Server is running on port: ${PORT}`)
 })
