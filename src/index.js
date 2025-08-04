@@ -23,7 +23,7 @@ app.get('/api/hello',(req,res)=>{
     res.json({msg:'Devconnect backend is working'})
 })
 
-const PORT=proces.env.PORT || 5000;
+const PORT=process.env.PORT || 5000;
 
 // routes
 const authRoutes=require('./routes/authRoutes.js');
